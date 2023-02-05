@@ -163,7 +163,8 @@ function renderCities() {
                     (month<10 ? '0' : '') + month + '/' +
                     (day<10 ? '0' : '') + day;
                     var Fivedayh4 = $("<h6>").text(dayOutput);
-                    //Set src to the imags
+                    //Set src to the imgs
+                    
                     var imgtag = $("<img>");
                     var skyconditions = response5day.list[i].weather[0].main;
                     if(skyconditions==="Clouds"){
