@@ -3,7 +3,11 @@ ion-icon {
     --ionicon-stroke-width: 80px;
   }
 
+  .display-4{
+    color:#20a2ee;
+    
 
+  }
 
   body {
     background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/04/Backgrounds-Landscape-pictures.jpg);
