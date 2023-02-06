@@ -29,7 +29,8 @@ JavaScript
 ## https://sandramihaela.github.io/Weather-Forecast-Dashboard/
 
 ## Screenshot 
-<img width="1440" alt="Screenshot 2023-02-06 at 18 24 57" src="https://user-images.githubusercontent.com/117038215/217059949-a151c518-d630-4af0-9c6c-9f5cb955600d.png">
+<img width="1436" alt="Screenshot 2023-02-06 at 18 55 24" src="https://user-images.githubusercontent.com/117038215/217060228-c15cfe58-645f-45a7-8dc9-ba1943a97336.png">
+
 
 
 ## Installation
