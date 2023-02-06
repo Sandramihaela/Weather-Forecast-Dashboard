@@ -1,3 +1,4 @@
+
 var cityList =$("#city-list");
 var cities = [];
 var key = "f3aa59891896ea518aff933a0a0bdae6";
@@ -213,7 +214,6 @@ function renderCities() {
 
 
   
-
 
 
 
