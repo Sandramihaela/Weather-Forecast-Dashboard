@@ -30,9 +30,8 @@ $(".history").on('click', function(event){
 document.getElementById("searchBtn").addEventListener("click", addResult);
 document.getElementById("searchBtn").addEventListener('click', getResult);
 
-
-
-// Presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
+// WHEN I view current weather conditions for that city
+// THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
 function getResult(){   
 
     $(".five-day").empty();
@@ -103,8 +102,8 @@ function getResult(){
             humidity.text("Humidity: " + data.current.humidity + " %");
             wind.text("Wind Speed: " + data.current.wind_speed + " MPH");
 
-        
-            // Presented with a color that indicates whether the conditions are favorable, moderate, or severe    
+            // WHEN I view the UV index
+            // THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe    
             var uvi =$("<div>")
             uvIndex.text("UV Index: ");
             uvi.text(data.current.uvi)
@@ -123,7 +122,8 @@ function getResult(){
                 uvi.attr("style","background-color:purple; color:black; margin-left: 5px")
             }
 
-            // 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity
+            // WHEN I view future weather conditions for that city
+            // THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity
             //using the data from previous fetch and display the 5 day weather data
             for (var i=1;i<6;i++){
 
@@ -133,9 +133,7 @@ function getResult(){
                 this["futureTemp"+i] = $("<div>")
                 this["futureWind"+i] = $("<div>")
                 this["futureHumidity"+i] = $("<div>")
-                
                 //translate utc to date
-
                 this["forecastDay"+i] = new Date(data.daily[i].dt * 1000);     
      
                 (this["futureDate"+i]).text(((this["forecastDay"+i]).getMonth()+1) + "/" + (this["forecastDay"+i]).getDate() + "/" + (this["forecastDay"+i]).getFullYear());
@@ -160,6 +158,9 @@ function getResult(){
           })
     })
 }
+
+// WHEN I click on a city in the search history
+// THEN I am again presented with current and future conditions for that city
 
 //get local storage info
 function getInfo() {
